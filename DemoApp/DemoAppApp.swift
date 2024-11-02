@@ -12,6 +12,10 @@ struct DemoAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth: 800, maxWidth: 800, minHeight: 300, maxHeight: 300)
+            
         }
+        .windowResizability(.contentSize)
+        
     }
 }
